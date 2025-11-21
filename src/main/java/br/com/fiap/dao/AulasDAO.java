@@ -5,9 +5,9 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class AulasDAO {
-    public ArrayList<AulasTO> findByIdCurso(Long idCurso) {
+    public ArrayList<AulasTO> findAulaByIdCurso(Long idCurso) {
         ArrayList<AulasTO> aulas = new ArrayList<AulasTO>();
-        String sql = "select titulo, duracao_min from aulas WHERE id_curso = ?";
+        String sql = "select id_aula, titulo, duracao_min from aulas WHERE id_curso = ?";
         try(PreparedStatement ps = ConnectionFactory.getConnection().prepareStatement(sql))
         {
             ps.setLong(1, idCurso);
@@ -15,6 +15,7 @@ public class AulasDAO {
             if (rs != null){
                 while (rs.next()){
                     AulasTO aula = new AulasTO();
+                    aula.setId_aula(rs.getLong("id_aula"));
                     aula.setTitulo(rs.getString("titulo"));
                     aula.setDuracao_min(rs.getLong("duracao_min"));
                     aulas.add(aula);

@@ -13,16 +13,19 @@ public class CursosTO {
     private LocalDate data_conclusao;
     @NotNull
     private String situacao_conclusao;
+    @NotNull
+    private String titulo;
 
     public CursosTO() {
 
     }
 
-    public CursosTO(LocalDate data_conclusao, Long id_curso, Long id_professor, String situacao_conclusao) {
+    public CursosTO(LocalDate data_conclusao, Long id_curso, Long id_professor, String situacao_conclusao, String titulo) {
         this.data_conclusao = data_conclusao;
         this.id_curso = id_curso;
         this.id_professor = id_professor;
         this.situacao_conclusao = situacao_conclusao;
+        this.titulo = titulo;
     }
 
     public Long getId_curso() {
@@ -55,6 +58,14 @@ public class CursosTO {
 
     public void setSituacao_conclusao(String situacao_conclusao) {
         this.situacao_conclusao = situacao_conclusao;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 }
 

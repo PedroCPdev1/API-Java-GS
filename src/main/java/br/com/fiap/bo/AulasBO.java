@@ -8,9 +8,9 @@ import java.util.ArrayList;
 public class AulasBO {
     private AulasDAO aulasDAO;
 
-    public ArrayList<AulasTO> findByIdCurso(Long idCurso){
+    public ArrayList<AulasTO> findAulaByIdCurso(Long idCurso){
         aulasDAO = new AulasDAO();
-        return aulasDAO.findByIdCurso(idCurso);
+        return aulasDAO.findAulaByIdCurso(idCurso);
     }
 
    public AulasTO findById(Long id){

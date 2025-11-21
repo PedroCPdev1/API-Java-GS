@@ -2,8 +2,6 @@ package br.com.fiap.to;
 
 import io.smallrye.common.constraint.NotNull;
 
-import java.time.LocalDate;
-
 public class LoginUsuarioTO {
     private Long id_usuario;
     @NotNull
