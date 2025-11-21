@@ -2,9 +2,6 @@ package br.com.fiap.to;
 
 import io.smallrye.common.constraint.NotNull;
 
-import java.sql.Date;
-import java.time.LocalDate;
-
 public class PerfilTO {
     private Long id_usuario;
     @NotNull

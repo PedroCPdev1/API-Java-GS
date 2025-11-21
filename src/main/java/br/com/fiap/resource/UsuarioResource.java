@@ -3,13 +3,11 @@ package br.com.fiap.resource;
 
 import br.com.fiap.bo.UsuarioBO;
 import br.com.fiap.to.*;
-import io.quarkus.logging.Log;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import java.util.ArrayList;
 
 @Path("/usuario")
 public class UsuarioResource {

@@ -1,6 +1,5 @@
 package br.com.fiap.dao;
 
-import br.com.fiap.to.CursosTO;
 import br.com.fiap.to.LoginUsuarioTO;
 import br.com.fiap.to.PerfilTO;
 

@@ -5,7 +5,6 @@ import br.com.fiap.bo.AulasBO;
 import br.com.fiap.bo.CursosBO;
 import br.com.fiap.to.AulasTO;
 import br.com.fiap.to.CursosTO;
-import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;

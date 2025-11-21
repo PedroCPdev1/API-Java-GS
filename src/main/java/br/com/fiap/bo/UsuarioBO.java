@@ -1,10 +1,8 @@
 package br.com.fiap.bo;
 
 import br.com.fiap.dao.UsuarioDAO;
-import br.com.fiap.to.AulasTO;
 import br.com.fiap.to.LoginUsuarioTO;
 import br.com.fiap.to.PerfilTO;
-import jakarta.validation.Valid;
 
 public class UsuarioBO {
     private UsuarioDAO usuarioDAO;

@@ -1,9 +1,6 @@
 package br.com.fiap.to;
 
 import io.smallrye.common.constraint.NotNull;
-import jakarta.validation.constraints.FutureOrPresent;
-
-import java.time.LocalDate;
 
 public class AulasTO {
     private Long id_curso;
